@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chat application</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <h1 class="chat-header">Chatting Application</h1>
+  <div class="container">
+    <div class="chat-area">
+
+      <div id="message-container"></div>
+      <div id="input-container">
+        <form id="send-container">
+          <input type="text" name="message" placeholder="Enter Message here.." autocomplete="off" id="message-input">
+          <button type="submit" class="btn " id="send-button">send</button>
+        </form>
+      </div>
+    </div>
+
+    <main>
+
+
+      <div class="card">
+        <div class="card-header">Chat</div>
+        <ul class="chat-list">
+          <li class="in">
+            <div class="chat-body">
+              <div class="chat-message">
+                <h5>Jimmy Willams</h5>
+                <p>Raw denim heard of them tofu master cleanse</p>
+              </div>
+            </div>
+          </li>
+          <li class="out">+
+            <div class="chat-body">
+              <div class="chat-message">
+                <h5>Serena</h5>
+                <p>Next level veard</p>
+              </div>
+            </div>
+          </li>
+          <li class="in">
+            <div class="chat-img">
+              <img alt="Avtar" src="https://bootdey.com/img/Content/avatar/avatar1.png">
+            </div>
+            <div class="chat-body">
+              <div class="chat-message">
+                <h5 class="name">Jimmy Willams</h5>
+                <p>Will stumptown scenes coffee viral.</p>
+              </div>
+            </div>
+          </li>
+          <li class="out">
+            <div class="chat-img">
+              <img alt="Avtar" src="https://bootdey.com/img/Content/avatar/avatar6.png">
+            </div>
+            <div class="chat-body">
+              <div class="chat-message">
+                <h5>Serena</h5>
+                <p>Tofu master best deal</p>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+    </main>
+  </div>
+</body>
+
+<script defer src="http://localhost:3000/socket.io/socket.io.js"></script>
+<script defer src="client.js"></script>
+
+</html>
